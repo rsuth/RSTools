@@ -4,6 +4,9 @@
 
 using namespace std;
 
+/****
+* moveCursor: move the cursor...
+*/
 void moveCursor(int x, int y){
 	COORD coord;
 	coord.X = x;
@@ -55,6 +58,9 @@ void hitEnter(){
 	cin.ignore(10000, '\n');
 }
 
+/***
+* Prints prompt, waits for enter
+*/ 
 void hitEnter(int xpos, int ypos){
 	moveCursor(xpos, ypos);
 	changeColor(7);
